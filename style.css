@@ -1,0 +1,122 @@
+:root{
+    --primaryColor:#1A2B33;
+    --secondaryColor:#1E3640;
+    --thirdColor:#1E3640;
+    --grey:#A9BEC8;
+    --border-radius:8px;
+    --spacing-xs:5px;
+    --spacing-sm:10px;
+    --spacing-md:15px;
+    --spacing-lg:20px;
+    --spacing-xl:40px;
+    --shadow:rgba(0,0,0,0.16) 0px 1px 4px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+@font-face{
+      font-family: "Outfit";
+      src: url("./fonts/outfit.ttf");
+}
+
+.disabled{
+    display: none !important;
+}
+
+body{
+    font-family:'Outfit',sans-serif;
+    height: 100vh;
+    text-transform:uppercase;
+    letter-spacing: 0.7rem;
+}
+
+/* intial welcome page */
+
+.intial-main-container{
+    background-color: var(--primaryColor);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intial-semi-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.i-m-sec-one{
+    color: white;
+}
+.pick-player-container{
+    background-color: var(--secondaryColor);
+    width: 600px;
+    height: 280px;
+    border-radius: calc(1.5*var(--border-radius));
+    color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-lg);
+}
+.sign-container{
+    background-color: var(--primaryColor);
+    width: 400px;
+    height: 100px;
+    border-radius: calc(1.5*var(--border-radius));
+    display: flex;
+    margin-bottom: 20px;
+}
+.pick-player-sign{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.8rem;
+}
+.start-game-btn{
+    letter-spacing: inherit;
+    height: 30px;
+    width: 250px;
+    font-weight:inherit;
+}
+.remember-x{
+        filter: brightness(80%);
+}
+.start-game-btn:hover{
+    background-color: var(--primaryColor);
+    border: 1px solid white;
+    color: var(--grey);
+}
+.start-game-btn:active{
+    background-color: #183541;
+    color: white;
+    border: 2px solid white;
+}
+
+.sign-container button{
+    height: 100px;
+    width: 200px;
+    border-radius: var(--border-radius);
+    background-color: var(--primaryColor);
+    padding: 20px;
+}
+.sign-container button img{
+    height: 100%;
+}
+
+.sign-container button:hover{
+    padding: 10px;
+}
+.sign-container button:hover img{
+    padding: 20px;
+}
+.sign-container button:focus{
+    background-color: var(--grey);
+}
+.sign-container button:focus img{
+    padding: 0px;
+}
+
+
